@@ -31,7 +31,6 @@ public class test02 {
 		engine.getRuntimeService().startProcessInstanceByKey("emp", map);
 	}
 	
-	
 	//查询流程
 	@Test
 	// 92501
@@ -76,7 +75,9 @@ public class test02 {
 		taskService.addComment("35005", "35001", "通过", "谁让你救过朕呢！。审核人：武则天");
 		taskService.complete("35005", map);
 	}
-
+	
+	
+	
 	// 部门经理
 	@Test
 	public void test044() {
