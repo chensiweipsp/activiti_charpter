@@ -30,6 +30,8 @@ public class test02 {
 		//		map.put("inputusers", "园芳05,思维哥,牛得华");
 		engine.getRuntimeService().startProcessInstanceByKey("emp", map);
 	}
+	
+	//查询流程
 	@Test
 	// 92501
 	public void test03() {
