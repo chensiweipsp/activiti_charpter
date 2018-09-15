@@ -20,13 +20,6 @@ public class test02 {
 		.addClasspathResource("emp.png").addClasspathResource("emp.bpmn").deploy();
 	}
 
-	@Test
-	public void test() {
-		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
-		processEngine.getRepositoryService().createDeployment().name("emp")
-		.addClasspathResource("emp.png").addClasspathResource("emp.bpmn").deploy();
-	}
-	//
 
 	@Test
 	public void test02() {
