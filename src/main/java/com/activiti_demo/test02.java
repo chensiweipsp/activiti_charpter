@@ -11,6 +11,8 @@ import org.activiti.engine.task.Comment;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
 public class test02 {
+	
+	//部署流程
 	@Test
 	public void test11() {
 		ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
