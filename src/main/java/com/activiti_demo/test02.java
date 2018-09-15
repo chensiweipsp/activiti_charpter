@@ -19,8 +19,6 @@ public class test02 {
 		processEngine.getRepositoryService().createDeployment().name("emp")
 		.addClasspathResource("emp.png").addClasspathResource("emp.bpmn").deploy();
 	}
-
-
 	@Test
 	public void test02() {
 		ProcessEngine engine = ProcessEngines.getDefaultProcessEngine();
@@ -30,7 +28,6 @@ public class test02 {
 		//		map.put("inputusers", "园芳05,思维哥,牛得华");
 		engine.getRuntimeService().startProcessInstanceByKey("emp", map);
 	}
-
 	@Test
 	// 92501
 	public void test03() {
@@ -39,7 +36,6 @@ public class test02 {
 		List<Task> tasks = engine.getTaskService().createTaskQuery().taskAssignee("思维哥03").list();
 		//组任务查询
 		//List<Task> tasks= processEngine.getTaskService().createTaskQuery().taskCandidateUser("狄仁杰").list();
-
 		for (Task task : tasks) {
 			System.out.println("" + task.getName());
 			System.out.println("流程定义ID"+task.getProcessDefinitionId());
