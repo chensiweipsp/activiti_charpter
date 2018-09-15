@@ -1,18 +1,11 @@
 package com.activiti_demo;
-
-import static org.junit.Assert.*;
 import java.util.List;
 import org.activiti.engine.ProcessEngine;
 import org.activiti.engine.ProcessEngines;
-import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
-import org.activiti.engine.task.Event;
 import org.activiti.engine.task.Task;
 import org.junit.Test;
-
-
 //分支一
-
 public class test {
 	@Test
 	public void test() {
@@ -20,7 +13,6 @@ public class test {
 		processEngine.getRepositoryService().createDeployment().name("emp")
 				.addClasspathResource("emp.png").addClasspathResource("emp.bpmn").deploy();
 	}
-
 	// 12501
 	@Test
 	public void test2() {
