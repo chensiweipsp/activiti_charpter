@@ -19,6 +19,8 @@ public class test02 {
 		processEngine.getRepositoryService().createDeployment().name("emp")
 		.addClasspathResource("emp.png").addClasspathResource("emp.bpmn").deploy();
 	}
+	
+	
 	//启动流程
 	@Test
 	public void test02() {
