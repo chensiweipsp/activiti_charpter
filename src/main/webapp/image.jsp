@@ -6,7 +6,7 @@
 <title>查看当前流程图</title>
 </head>
 <body>
-	<!-- 1.获取到规则流程图 -->
+	<!-- 1.获取到规则流程图 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
 	<img style="position: absolute; top: 0px; left: 0px;"
 		src="workflowAction2.do?method=getImage&deploymentId=${deploymentId}&imageName=${imageName}">
 	<!-- 2.根据当前活动的坐标，动态绘制DIV -->
